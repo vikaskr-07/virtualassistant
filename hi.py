@@ -103,6 +103,10 @@ if __name__ == "__main__":
             speak(results)
             print(results)
 
+        elif "news" in query:
+            from NewsRead import latestNews
+            latestNews()
+
         elif "open youtube" in query:
             speak("opening youtube")
             webbrowser.open("www.youtube.com")
@@ -139,6 +143,9 @@ if __name__ == "__main__":
 
         elif "no thanks" in query:
             speak("thanks for using me sir, have a good day")
+            sys.exit()
+        elif "stop" in query:
+            speak("ok sir")
             sys.exit()
 
         elif "close chrome" in query:
