@@ -16,11 +16,12 @@ def latestNews():
     apidict= {"business": "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=69dcc3ac5fb64dad8465953e66dd70b5",
               "sports": "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=69dcc3ac5fb64dad8465953e66dd70b5",
               "entertainment": "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=69dcc3ac5fb64dad8465953e66dd70b5",
-              "health": "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=69dcc3ac5fb64dad8465953e66dd70b5"
+              "health": "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=69dcc3ac5fb64dad8465953e66dd70b5",
+              "technology": "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=69dcc3ac5fb64dad8465953e66dd70b5"
               }
     content = None
     url = None
-    speak("which field news do you want, [business] , [sports] , [entertainment] , [health]")
+    speak("which field news do you want, [business] , [sports] , [entertainment] , [health] , [technology]")
     field= input("type field news that you want")
     for key, values in apidict.items():
         if key.lower() in field.lower():
